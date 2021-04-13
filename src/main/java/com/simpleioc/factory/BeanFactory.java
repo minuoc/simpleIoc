@@ -19,7 +19,7 @@ public interface BeanFactory {
 
 
     /**
-     *
+     * 注册 bean定义
      * @param name
      * @param beanDefinition
      */
