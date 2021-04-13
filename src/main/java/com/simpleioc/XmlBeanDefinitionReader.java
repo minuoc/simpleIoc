@@ -22,12 +22,10 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 
     /**
      * 构造器必须有一个资源加载器，默认插件创建一个map 容器
-     *
-     * @param registry
      * @param resourceLoader
      */
-    public XmlBeanDefinitionReader(Map<String, BeanDefinition> registry, ResourceLoader resourceLoader) {
-        super(registry, resourceLoader);
+    public XmlBeanDefinitionReader( ResourceLoader resourceLoader) {
+        super(resourceLoader);
     }
 
     public void readXML(String location) throws IOException, SAXException, ParserConfigurationException {

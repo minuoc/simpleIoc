@@ -24,10 +24,9 @@ public abstract class AbstractBeanDefinitionReader implements BeanDefinitionRead
 
     /**
      *  构造器必须有一个资源加载器，默认插件创建一个map 容器
-     * @param registry
      * @param resourceLoader
      */
-    public AbstractBeanDefinitionReader(Map<String, BeanDefinition> registry, ResourceLoader resourceLoader) {
+    public AbstractBeanDefinitionReader(ResourceLoader resourceLoader) {
         this.registry = new HashMap<>();
         this.resourceLoader = resourceLoader;
     }

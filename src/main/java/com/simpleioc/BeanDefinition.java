@@ -23,7 +23,7 @@ public class BeanDefinition {
     /**
      * 类的属性集合
      */
-    private PropertyValues propertyValues;
+    private PropertyValues propertyValues = new PropertyValues();
 
 
     /**
